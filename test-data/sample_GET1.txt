@@ -1,0 +1,8 @@
+{
+  "body": null,
+  "httpMethod": "GET",
+  "resource": "/api/q",
+  "queryStringParameters": {
+    "url": "https://www.worksheetworks.com/math/multi-digit-operations/division/two-with-three-digit-remainders.html"
+  }
+}

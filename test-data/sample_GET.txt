@@ -1,0 +1,37 @@
+{
+  "body": null,
+  "httpMethod": "GET",
+  "resource": "/api/q",
+  "queryStringParameters": {
+    "station_id": "090"
+  },
+  "requestContext": {
+    "httpMethod": "GET",
+    "requestId": "test-invoke-request",
+    "path": "/api/q",
+    "resourceId": "62va99",
+    "apiId": "qqlfrb4ca6",
+    "stage": "test-invoke-stage",
+    "resourcePath": "/api/q",
+    "identity": {
+      "apiKey": "test-invoke-api-key",
+      "userArn": "arn:aws:sts::413035961530:assumed-role/PowerUser/IntuitOlympus-cahn-10000141450-1508714026376",
+      "user": "AROAJAGS6LRM6QC7M3TUM:IntuitOlympus-cahn-10000141450-1508714026376",
+      "cognitoIdentityPoolId": null,
+      "userAgent": "Apache-HttpClient/4.5.x (Java/1.8.0_144)",
+      "accountId": "413035961530",
+      "cognitoAuthenticationType": null,
+      "accessKey": "ASIAJNAA2Y7NGM2IUJIQ",
+      "caller": "AROAJAGS6LRM6QC7M3TUM:IntuitOlympus-cahn-10000141450-1508714026376",
+      "cognitoIdentityId": null,
+      "sourceIp": "test-invoke-source-ip",
+      "cognitoAuthenticationProvider": null
+    },
+    "accountId": "413035961530"
+  },
+  "headers": null,
+  "stageVariables": null,
+  "path": "/api/q",
+  "pathParameters": null,
+  "isBase64Encoded": false
+}

@@ -1,0 +1,10 @@
+{
+  "name": "turl",
+  "description": "URL shortener",
+  "runtime": "python2.7",
+  "handler": "main.handler",
+  "memory": 128,
+  "timeout": 90,
+  "role": "arn:aws:iam::519197270331:role/turl_lambda_function",
+  "environment": {}
+}

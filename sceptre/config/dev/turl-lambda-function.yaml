@@ -1,0 +1,14 @@
+template_path: templates/turl-lambda-function.yaml
+dependencies:
+hooks:
+  before_create:
+    - !cmd "echo creating..."
+  after_create:
+    - !cmd "echo created"
+    - !cmd "echo done"
+  after_update:
+stack_tags:
+  app: turl
+  bu: pi
+  env: dev
+  pool: role

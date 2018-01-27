@@ -1,0 +1,75 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Creates a Dynamo DB table
+Metadata:
+  Name: url-demo
+  Version: 0.1.0
+Parameters:
+  InvTableName:
+    Default: "urls"
+    Description: Dynamo DB Table Name
+    Type: String
+Resources:
+  DynamoDbTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Ref InvTableName
+      AttributeDefinitions:
+        -
+          AttributeName: "url"
+          AttributeType: "S"
+        -
+          AttributeName: "short_url"
+          AttributeType: "S"
+      KeySchema:
+        -
+          AttributeName: "url"
+          KeyType: "HASH"
+      ProvisionedThroughput:
+        ReadCapacityUnits: "5"
+        WriteCapacityUnits: "5"
+      Tags:
+        -
+          Key: tablename
+          Value: !Ref InvTableName
+      GlobalSecondaryIndexes:
+        -
+          IndexName: "short_url-index"
+          KeySchema:
+            -
+              AttributeName: "short_url"
+              KeyType: "HASH"
+          Projection:
+            NonKeyAttributes:
+              - "url"
+            ProjectionType: "INCLUDE"
+          ProvisionedThroughput:
+            ReadCapacityUnits: "5"
+            WriteCapacityUnits: "5"
+  Role:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          -
+            Effect: Allow
+            Principal:
+              Service: dynamodb.amazonaws.com
+            Action: sts:AssumeRole
+      Path: /
+      Policies:
+        -
+          PolicyName: Policy
+          PolicyDocument:
+            Statement:
+              -
+                Effect: Allow
+                Action:
+                  - lambda:InvokeFunction
+                Resource: "*"
+
+Outputs:
+  DynamoDbTable:
+    Export:
+      Name: !Sub ${InvTableName}
+    Value: !Ref 'DynamoDbTable'

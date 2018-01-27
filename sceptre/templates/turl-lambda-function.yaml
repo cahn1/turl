@@ -1,0 +1,53 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: IAM Role for enabling Lambda read/write Dynamodb table
+Resources:
+  AppIAMRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: turl_lambda_function
+      AssumeRolePolicyDocument:
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service: lambda.amazonaws.com
+          Action: sts:AssumeRole
+      Path: "/"
+      Policies:
+      - PolicyName: lambda-access-dynamodb
+        PolicyDocument:
+          Statement:
+          - Sid: LambdaRWDynamoDbTable
+            Action:
+            - dynamodb:DescribeStream
+            - dynamodb:GetRecords
+            - dynamodb:BatchGetItem
+            - dynamodb:BatchWriteItem
+            - dynamodb:GetShardIterator
+            - dynamodb:ListStreams
+            - dynamodb:GetItem
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:DeleteItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            Effect: Allow
+            Resource:
+              - "arn:aws:dynamodb:us-west-2:519197270331:table/urls"
+              - "arn:aws:dynamodb:us-west-2:519197270331:table/urls/index/*"
+          - Sid: EnableLambdaExecutionLogs
+            Action:
+            - logs:CreateLogGroup
+            - logs:CreateLogStream
+            - logs:PutLogEvents
+            Effect: Allow
+            Resource: "arn:aws:logs:*:*:*"
+Outputs:
+  ArnOim:
+    Description: ARN of IAM Policy for enabling turl_lambda_function access to Dynamodb
+    Value:
+      Fn::GetAtt:
+      - AppIAMRole
+      - Arn
+    Export:
+      Name:
+        Fn::Sub: "${AWS::StackName}-ArnOim"
