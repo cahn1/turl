@@ -3,7 +3,7 @@ Simple Application for Shortening URLs
 
 ## Sample Usage
 
-**POST** Generate short url or retrieve if exists
+**POST** - Generate short url or retrieve if exists
 
 ```
 curl APIGW_URL -H "Content-Type: application/json" -X POST -d '{"url":"LONG_URL"}'
@@ -34,7 +34,7 @@ aws apigateway test-invoke-method --rest-api-id qpgds5ptla --resource-id 5cj2rv 
 ```
 
 
-**GET** Retrieve LONG_URL from SHORT_URL
+**GET** - Retrieve LONG_URL from SHORT_URL
 
 ```
 curl APIGW_URL\?short_url\=21sMz
