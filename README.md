@@ -1,4 +1,7 @@
 # turl
+
+[![Build Status](http://http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com/buildStatus/icon?job=turl)](http://http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com/job/turl)
+
 Simple Application for Shortening URLs
 
 ## Sample Usage
