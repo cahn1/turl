@@ -2,6 +2,14 @@
 
 [![Build Status](http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com:8080/job/turl/badge/icon)](http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com:8080/job/turl/)
 
+[![Build Status](http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com:8080/job/turl/badge/icon)](http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com:8080/job/turl/)
+
+[![Build Status](http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com:8080/buildStatus/icon?job=turl)](http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com:8080/job/turl/)
+
+[![Build Status](http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com:8080/job/turl/badge/icon)](http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com:8080/job/turl)
+
+[![Build Status](http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com:8080/buildStatus/icon?job=turl)](http://rango-elb143-elb-lo8yagpknu2v-199439260.us-west-2.elb.amazonaws.com:8080/job/turl)
+
 Simple Application for Shortening URLs
 
 ## Sample Usage
