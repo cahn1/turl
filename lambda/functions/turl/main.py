@@ -36,7 +36,7 @@ logger.setLevel(logging.INFO)
 
 # create resource for dynamodb
 ddb = boto3.resource('dynamodb')
-base_num = 40000000
+base_num = 30000000
 #mydomain = 'rango-dev.intuit.com'
 # API Gateway url. This can be shorted.
 mydomain = 'qpgds5ptla.execute-api.us-west-2.amazonaws.com'
@@ -162,6 +162,3 @@ def handler(event, context):
   else:
     raise Exception('No supprted method.')
     return '461'
-
-if __name__ == "__main__":
-  handler(event, 'context')
