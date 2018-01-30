@@ -9,7 +9,6 @@ __email__ = "chulho_ahn@intuit.com"
 __status__ = "dev"
 
 import sys
-sys.path.append('base62')
 from StringIO import StringIO
 import boto3
 from boto3.dynamodb.conditions import Key, Attr
