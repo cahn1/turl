@@ -9,6 +9,7 @@ __email__ = "chulho_ahn@intuit.com"
 __status__ = "dev"
 
 import sys
+import os
 from StringIO import StringIO
 import boto3
 from boto3.dynamodb.conditions import Key, Attr
@@ -128,7 +129,7 @@ def gen_response(r, t):
   return response
 
 # Supports PutItem and GetItem to the dynamodb table
-def handler(event, context):
+def lambda_handler(event, context):
   # set dynamodb table name
   table = ddb.Table('urls')
 
