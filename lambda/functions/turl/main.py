@@ -162,3 +162,6 @@ def handler(event, context):
   else:
     raise Exception('No supprted method.')
     return '461'
+
+if __name__ == "__main__":
+  handler(event, 'context')
