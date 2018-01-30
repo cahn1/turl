@@ -129,7 +129,7 @@ def gen_response(r, t):
   return response
 
 # Supports PutItem and GetItem to the dynamodb table
-def lambda_handler(event, context):
+def main(event, context):
   # set dynamodb table name
   table = ddb.Table('urls')
 
