@@ -36,7 +36,7 @@ logger.setLevel(logging.INFO)
 
 # create resource for dynamodb
 ddb = boto3.resource('dynamodb')
-base_num = 30000000
+base_num = 40000000
 #mydomain = 'rango-dev.intuit.com'
 # API Gateway url. This can be shorted.
 mydomain = 'qpgds5ptla.execute-api.us-west-2.amazonaws.com'
