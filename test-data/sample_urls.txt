@@ -1,0 +1,46 @@
+https://shop.scholastic.com/parent-ecommerce/books/zac-and-the-dream-stealers-9780545401067.html
+http://dongkuk.tistory.com/entry/Ruby-TDD-Rspec-10%EB%8B%A8%EA%B3%84-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC\?category\=617534
+https://nec.amtrak.com/news/gateway-program-development-corporation-releases-request-for-information-for-hudson-tunnel-project/
+http://boto3.readthedocs.io/en/latest/reference/services/dynamodb.html\#DynamoDB.Table.put_item
+https://shop.scholastic.com/parent-ecommerce/books/wonder-9780375869020.html
+https://disneyland.disney.go.com/faq/tickets/eticket-terms-conditions/
+https://www.google.com/search\?source\=hp\&ei\=ecxmWrnoM9DUjwP1lIvYBg\&q\=jump+to+the+python\&oq\=jump+to+the+python\&gs_l\=psy-ab.3..0i22i30k1.1837.10509.0.10655.35.23.4.1.1.0.657.2582.0j2j2j2j1j1.8.0....0...1c.1.64.psy-ab..22.13.2606...0j46j0i131k1j0i46k1.0.H5eRj6d-nKY
+https://shop.scholastic.com/parent-ecommerce/books/james-and-the-giant-peach-9780142410363.html
+https://www.worksheetworks.com/math/multi-digit-operations/division/two-with-three-digit-remainders.html
+
+
+#
+# POST
+#
+
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q -H "Content-Type: application/json" -X POST -d '{"url":"https://shop.scholastic.com/parent-ecommerce/books/zac-and-the-dream-stealers-9780545401067.html"}'
+
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q -H "Content-Type: application/json" -X POST -d '{"url":"http://dongkuk.tistory.com/entry/Ruby-TDD-Rspec-10%EB%8B%A8%EA%B3%84-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC\?category\=617534"}'
+
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q -H "Content-Type: application/json" -X POST -d '{"url":"https://nec.amtrak.com/news/gateway-program-development-corporation-releases-request-for-information-for-hudson-tunnel-project/"}'
+
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q -H "Content-Type: application/json" -X POST -d '{"url":"http://boto3.readthedocs.io/en/latest/reference/services/dynamodb.html\#DynamoDB.Table.put_item"}'
+
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q -H "Content-Type: application/json" -X POST -d '{"url":"https://shop.scholastic.com/parent-ecommerce/books/wonder-9780375869020.html"}'
+
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q -H "Content-Type: application/json" -X POST -d '{"url":"https://disneyland.disney.go.com/faq/tickets/eticket-terms-conditions/"}'
+
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q -H "Content-Type: application/json" -X POST -d '{"url":"https://www.google.com/search\?source\=hp\&ei\=ecxmWrnoM9DUjwP1lIvYBg\&q\=jump+to+the+python\&oq\=jump+to+the+python\&gs_l\=psy-ab.3..0i22i30k1.1837.10509.0.10655.35.23.4.1.1.0.657.2582.0j2j2j2j1j1.8.0....0...1c.1.64.psy-ab..22.13.2606...0j46j0i131k1j0i46k1.0.H5eRj6d-nKY"}'
+
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q -H "Content-Type: application/json" -X POST -d '{"url":"https://shop.scholastic.com/parent-ecommerce/books/james-and-the-giant-peach-9780142410363.html"}'
+
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q -H "Content-Type: application/json" -X POST -d '{"url":"https://www.worksheetworks.com/math/multi-digit-operations/division/two-with-three-digit-remainders.html"}'
+
+#
+# Get
+#
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q\?short_url\=21sMz
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q\?short_url\=21sN0
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q\?short_url\=21sN1
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q\?short_url\=21sN2
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q\?short_url\=21sN3
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q\?short_url\=21sN4
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q\?short_url\=21sN5
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q\?short_url\=21sN6
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q\?short_url\=21sN7
+curl https://qpgds5ptla.execute-api.us-west-2.amazonaws.com/dev/api/q\?short_url\=3920

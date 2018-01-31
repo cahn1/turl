@@ -63,7 +63,10 @@ def get_short_url(t, q):
     merge = { u'HTTPStatusCode': response['ResponseMetadata']['HTTPStatusCode'], u'short_url': response['Item']['short_url'] }
     return merge
   # if the requested url doesn't exist in the table then geenerate new short_url
-  except NameError:
+#  except NameError:
+except Exception as e:
+    print('URL is not in the table')
+    print('Exception: {}'.format(e))
     seq = next_short(t)
     query = q.update({'short_url': seq})
     # Insert a new url w/ generated short_url into dynamodb table
