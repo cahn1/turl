@@ -64,7 +64,7 @@ def get_short_url(t, q):
     return merge
   # if the requested url doesn't exist in the table then geenerate new short_url
 #  except NameError:
-except Exception as e:
+  except Exception as e:
     print('URL is not in the table')
     print('Exception: {}'.format(e))
     seq = next_short(t)
