@@ -9,6 +9,7 @@ __email__ = "chulho_ahn@intuit.com"
 __status__ = "dev"
 
 import sys
+sys.path.append('lib')
 from StringIO import StringIO
 import boto3
 from boto3.dynamodb.conditions import Key, Attr
@@ -55,18 +56,17 @@ def chk_valid_url(url):
 
 # Retrieve short url based on the next sequence number
 def get_short_url(t, q):
+  print('q: {}'.format(q))
   try:
     response = t.get_item(
       Key = q
     )
-    print('response[Item]: {}'.format(response[Item]))
+    print('response[Item]: {}'.format(response['Item']))
     merge = { u'HTTPStatusCode': response['ResponseMetadata']['HTTPStatusCode'], u'short_url': response['Item']['short_url'] }
     return merge
   # if the requested url doesn't exist in the table then geenerate new short_url
-#  except NameError:
   except Exception as e:
-    print('URL is not in the table')
-    print('Exception: {}'.format(e))
+    print('URL is not in the table. {}'.format(e))
     seq = next_short(t)
     query = q.update({'short_url': seq})
     # Insert a new url w/ generated short_url into dynamodb table
