@@ -10,6 +10,7 @@ __status__ = "dev"
 
 import sys
 sys.path.append('turl/lib')
+sys.path.append('lib')
 from StringIO import StringIO
 import boto3
 from boto3.dynamodb.conditions import Key, Attr
