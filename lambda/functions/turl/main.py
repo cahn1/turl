@@ -165,7 +165,7 @@ def handler(event, context):
     return gen_response(orig_url, 'GET')
   else:
     raise Exception('No supprted method.')
-    return '461'
+    return '460'
 
 if __name__ == "__main__":
   handler(event, 'context')
