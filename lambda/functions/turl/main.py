@@ -32,6 +32,7 @@ import time, datetime
 """
 
 # set logging
+logging.basicConfig()
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
@@ -52,7 +53,7 @@ def chk_valid_url(url):
     else:
       return urllib.urlopen(url)
   except IOError:
-    log.error('Not a valid URL.')
+    logger.error('Not a valid URL.')
     return False
 
 # Retrieve short url based on the next sequence number
